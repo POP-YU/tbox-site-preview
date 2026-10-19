@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>页面不存在｜T-Box</title>
+<meta name="robots" content="noindex">
+<!--
+  404 页刻意不引用外部 CSS/JS。
+  GitHub Pages 会把 404.html 返回在任何未命中的路径下（例如 /foo/bar），
+  那时相对路径 assets/... 会解析成 /foo/assets/...，样式直接丢。
+  所以这里只写内联样式，配色沿用 assets/style.css 的 CSS 变量实测值。
+-->
+<style>
+  :root{--bg:#f6f7fb;--panel:#fff;--text:#172033;--muted:#667085;--line:#e5e7eb;--accent:#635bff}
+  @media (prefers-color-scheme: dark){:root{--bg:#0b1020;--panel:#121a2b;--text:#edf2ff;--muted:#aab4c8;--line:#27334d}}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
+       background:var(--bg);color:var(--text);line-height:1.6}
+  main{max-width:720px;margin:0 auto;padding:96px 24px}
+  .code{font-size:64px;font-weight:800;color:var(--accent);margin:0 0 8px;letter-spacing:-2px}
+  h1{font-size:28px;margin:0 0 12px}
+  p{color:var(--muted);font-size:17px;margin:0 0 28px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  a.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;
+        border:1px solid var(--line);background:var(--panel);color:var(--text)}
+  a.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+</style>
+</head>
+<body>
+<main>
+  <p class="code">404</p>
+  <h1>这个页面不存在</h1>
+  <p>链接可能已经变了，或者地址输错了。下面几个是还在的页面。</p>
+  <div class="btns">
+    <a class="btn primary" href="index.html">回首页</a>
+    <a class="btn" href="download.html">下载</a>
+    <a class="btn" href="activate.html">激活</a>
+    <a class="btn" href="faq.html">常见问题</a>
+  </div>
+</main>
+</body>
+</html>

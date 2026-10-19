@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>下载 T-Box</title><meta name="description" content="下载 T-Box 安装包：版本号、大小与 SHA256 全部列出，下载后自己算一遍对一下。183MB，Windows 桌面。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="T-Box">
+<meta property="og:title" content="下载 T-Box">
+<meta property="og:description" content="下载 T-Box 安装包：版本号、大小与 SHA256 全部列出，下载后自己算一遍对一下。183MB，Windows 桌面。">
+<meta property="og:url" content="https://tbox.du4s.com/download.html">
+<meta property="og:image" content="https://tbox.du4s.com/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="T-Box 桌面答案浮窗：选择题、图形题、英文题给答案，浮窗点击穿透、不抢焦点，卡密激活不自动续费">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tbox.du4s.com/assets/img/og.png">
+<meta name="twitter:image:alt" content="T-Box 桌面答案浮窗：选择题、图形题、英文题给答案，浮窗点击穿透、不抢焦点，卡密激活不自动续费">
+<link rel="canonical" href="https://tbox.du4s.com/download.html">
+<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)"><link rel="stylesheet" href="assets/style.css?v=aa985563a3"><script src="assets/config.js?v=aa985563a3"></script><script defer src="assets/app.js?v=aa985563a3"></script><link rel="icon" href="assets/img/logo.svg" type="image/svg+xml"></head><body><nav class="nav"><a class="brand" href="index.html">T-<span>Box</span></a><div class="navlinks"><a href="activate.html">激活教程</a><a href="faq.html">FAQ</a><a data-buy href="#buy-pending">购买</a></div></nav><main class="wrap section"><h1>下载 T-Box</h1><p><a class="btn primary" data-buy href="#buy-pending">立即购买</a></p><p class="lead">先免费试用，再决定是否购买。</p><div class="panel"><table class="table"><tr><th>版本</th><td data-version>0.1.21</td></tr><tr><th>大小</th><td data-size>183,155,560 bytes</td></tr><tr><th>SHA256</th><td class="code" data-sha256>D1F82B1947CCE32C5DA14494F312A4E85B6E0A0A4A0E38C246C7F83531593E74</td></tr><tr><th>发布日期</th><td data-release-date>2026-10-19</td></tr></table><div class="actions" id="dl-actions"><a class="btn primary" data-primary-download href="https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.21/TBox-Setup.exe">主线路下载</a><a class="btn" data-mirror-1 href="https://github.com/tianou10086-create/tbox-site/releases">备用线路 1</a><a class="btn" data-mirror-2 href="#">备用线路 2</a></div><p class="muted">主线路直连 Release 里的资产文件，点开即开始下载；备用线路 1 是版本列表页（生产仓库尚未发布版本时会是空列表）。183MB 安装器不放进 GitHub Pages 仓库（单文件上限 100MB），通过 GitHub Release 发布。<b>注意单位</b>：页面这个 183MB 是十进制（183,155,560 字节），Windows 资源管理器按 MiB 显示，会看到约 <b>175 MB</b> —— 是同一个文件，不是没下完。</p></div><div class="panel"><h3>第一次运行会被 Windows 拦一下（正常）</h3><p class="muted">安装包用<strong>本地根证书</strong>签名，而这张根证书要到安装时才被装进本机信任库。所以下载后双击，系统多半会弹「已保护你的电脑 / 未知发布者」：点<strong>更多信息</strong> → <strong>仍要运行</strong>就行。</p><p class="muted">别拿这个提示判断文件真假——自签证书谁都能伪造一张同名的。<strong>判断真伪只看下面这行 SHA256</strong>，对不上就别装。</p></div><section class="section"><h2>校验文件</h2><pre class="code">Get-FileHash TBox-Setup.exe -Algorithm SHA256</pre><p>期望值：<span class="code" data-sha256></span></p></section><section class="section"><h2>更新日志</h2><details class="panel"><summary>0.1.21</summary><p>统一浮窗显示、视觉答题链路与激活流程；修复启动状态竞态。</p></details></section>
+  <!-- 购买未开通时显示的兜底区块：由 assets/app.js 在 BUY_URL 为空时取消 hidden。
+       为什么要有：BUY_URL 没填时，「立即购买」原来是个 href="#" 的死链，
+       用户点了只会跳回页首 + 冒出一行灰字。卖货站最贵的位置放一个点不动的按钮，
+       比不放还糟。现在它会把用户带到这段解释 + 一条真的能走的下载路径。 -->
+  <section class="section" id="buy-pending" hidden>
+    <div class="panel">
+      <h2>购买通道正在开通</h2>
+      <p class="muted">卡密走发卡平台自动发货，商户号与回调还在配置中，所以现在还不能直接下单。开通后这块会直接变成购买入口，不用重新找。</p>
+      <p class="muted">在那之前可以<strong>先下载 0.1.21 免费试用</strong>：用你自己的真实题面验证设备、字幕位置和共享表现，验完再决定买不买。</p>
+      <p><a class="btn primary" href="#dl-actions" data-buy-pending-cta>去下载试用版</a></p>
+    </div>
+  </section>
+</main><footer class="footer"><div class="wrap"><a href="index.html">返回首页</a></div></footer></body></html>
