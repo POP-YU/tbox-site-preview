@@ -1,0 +1,29 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FAQ｜T-Box</title><meta name="description" content="T-Box 常见问题：能用在哪些场景、浮窗会不会被看到、换电脑怎么办、不自动续费。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="T-Box">
+<meta property="og:title" content="FAQ｜T-Box">
+<meta property="og:description" content="T-Box 常见问题：能用在哪些场景、浮窗会不会被看到、换电脑怎么办、不自动续费。">
+<meta property="og:url" content="https://tbox.du4s.com/faq.html">
+<meta property="og:image" content="https://tbox.du4s.com/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="T-Box 桌面答案浮窗：选择题、图形题、英文题给答案，浮窗点击穿透、不抢焦点，卡密激活不自动续费">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tbox.du4s.com/assets/img/og.png">
+<meta name="twitter:image:alt" content="T-Box 桌面答案浮窗：选择题、图形题、英文题给答案，浮窗点击穿透、不抢焦点，卡密激活不自动续费">
+<link rel="canonical" href="https://tbox.du4s.com/faq.html">
+<meta name="theme-color" content="#0A0B10">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/design.css"><script src="assets/config.js?v=32c5517856"></script><script defer src="assets/app.js"></script>
+<script defer src="assets/design.js"></script><link rel="icon" href="assets/img/logo.svg" type="image/svg+xml"></head><body class="design-upgrade"><nav class="nav" aria-label="主导航">
+  <a class="brand" href="index.html">T-<span>Box</span></a>
+  <div class="navlinks"><a href="download.html">下载</a><a href="activate.html">卡密教程</a><a href="faq.html" aria-current="page">常见问题</a><span class="nav-status" role="status">购买通道开通中</span></div>
+</nav><main class="wrap page-content faq"><header class="page-header"><span class="eyebrow">使用帮助 / FAQ</span><h1>先把疑问说清楚。</h1><p class="lead">安装、卡密、内容保护与已知限制。在购买前，把这些事实核对一遍。</p></header><p><a class="btn primary" data-buy href="#buy-pending">立即购买</a></p><details name="faq" open><summary>购买后需要注册吗？</summary><p>不需要注册账号。当前在线购买与自动发货尚未开放；拿到卡密后在启动器中激活，具体步骤见激活教程。</p></details><details name="faq"><summary>为什么要安装根证书？</summary><p>测试版用本地根证书签名，让 Windows 能校验安装器与产品内部组件。安装器会在安装时把这张根证书加入本机信任库；卸载时它会弹窗问「是否同时删除根证书」，<strong>选「是」</strong>。选「否」的话这张自建根会一直留在你的信任库里——它不在微软公信根名单内，留着没用。也正因为是自建根，<strong>安装之前</strong>系统并不认这个签名，这就是下面那条提示的由来。</p></details><details name="faq"><summary>卸载后那张根证书还在吗？</summary><p>取决于你在卸载确认框里点的哪个按钮。选「是」——已经删掉；选「否」——还在。想手动确认或清理：<code>certutil -store Root "T-Box Local Root CA"</code> 能查到就是还在，用<code>以管理员身份</code>运行 <code>certutil -delstore Root "T-Box Local Root CA"</code> 即可删除。</p></details><details name="faq"><summary>Windows 提示「已保护你的电脑 / 未知发布者」，要不要继续？</summary><p>先暂停核对来源与文件哈希。确认可信之后，再自行决定是否点<strong>更多信息</strong> → <strong>仍要运行</strong>。原因是那张本地根证书在安装之前还没进系统信任库，不是文件坏了。判断文件有没有被调包别看这个提示，看 SHA256：下载页给了期望值和 <code>Get-FileHash</code> 命令，只能证明它与该期望值一致；期望值本身也必须来自你信任的发布渠道。自签证书谁都能造一张同名的，哈希对不上就别运行。</p></details><details name="faq"><summary>浮窗会出现在屏幕共享里吗？</summary><p>提示盒使用内容保护标志降低录屏暴露；不同会议软件和独占全屏的表现以现场环境为准。</p></details><details name="faq"><summary>答案为空怎么办？</summary><p>先核对网络与模型配置，查看启动器状态行；可以尝试“一键恢复”。没有余额页。不要修改安装目录文件，若仍失败请保留日志与原始错误。</p></details><details name="faq"><summary>如何校验安装包？</summary><p>在 PowerShell 运行下载页给出的 Get-FileHash 命令，对比页面 SHA256。</p></details>
+  <!-- 购买未开通时显示的兜底区块：由 assets/app.js 在 BUY_URL 为空时取消 hidden。
+       为什么要有：BUY_URL 没填时，「立即购买」原来是个 href="#" 的死链，
+       用户点了只会跳回页首 + 冒出一行灰字。卖货站最贵的位置放一个点不动的按钮，
+       比不放还糟。现在它会把用户带到这段解释 + 一条真的能走的下载路径。 -->
+  <section class="section" id="buy-pending" hidden><div class="panel pending-panel"><div><span class="section-kicker">先试，再决定</span><h2>购买通道正在开通</h2><p class="muted">在线下单与自动发货尚未开放。你可以先下载最新版本免费试用，验证自己的设备、题面与共享表现。</p></div><a class="btn primary" href="download.html#dl-actions" data-buy-pending-cta>去下载试用版</a></div></section>
+<details name="faq"><summary>现在买了卡密能激活吗？</summary><p><b>最新版本：能。</b>卡密格式为 <code>TB-YYYYMMDD-PLAN-SEQ4-CHK4#签名</code>，使用 Ed25519 签名，启动器用内置公钥<b>在本机离线验签</b>——不联网、不连服务器、不自动续费。验过之后在本机写一份 DPAPI 加密的授权文件（<code>%LOCALAPPDATA%\TBox\license.bin</code>）。<b>旧版：不能。</b>那些版本把卡密发往占位地址 <code>https://旧版占位激活地址</code>（<code>example.com</code> 永不指向真实服务器），点「激活」只会返回「激活失败：…」。用卡密请先装 最新版本。</p></details><details name="faq"><summary>那现在怎么用？</summary><p>不激活也能用 <b>7 天</b>——启动器状态行写的就是「试用模式 · 激活后解除限制」。这 7 天足够验证声卡、显示器、题面识别和字幕位置是不是你要的。到期后启动器会显示「试用已结束 · 输入授权卡密后点击激活」。</p></details><details name="faq"><summary>我自己有授权服务，能接吗？</summary><p>不用接了。<b>最新版本的激活不再走网络</b>：卡密本身带签名，验签只用内置公钥，启动器不会发起任何在线激活请求（旧的 <code>POST /activate</code> 调用已从源码里删掉）。签发私钥只在发卡侧保管；用户不需要接入自己的授权服务器。</p></details><details name="faq"><summary>离线授权能远程吊销、换机或续期吗？</summary><p>离线卡不能远程吊销：启动器只在本机验签，不向服务器查询吊销状态。绑机卡换机需补发新卡，未绑机卡可直接换机；到期续用需补发新卡。</p></details><details name="faq"><summary>免费试用 7 天和体验卡 7 天是什么关系？</summary><p>两者都是 7 天，时长档位重复，二选一没有时长档位增量，也不会自动叠加成 14 天。体验卡按签发时的绝对到期时间计算，不会接在免费试用之后自动顺延；具体截止时间以卡密为准。本页不调整价格。</p></details></main><footer class="footer"><div class="wrap"><div class="footer-groups"><section class="footer-group"><h3>产品</h3><a href="index.html">功能概览</a></section><section class="footer-group"><h3>下载</h3><a href="download.html">下载试用</a></section><section class="footer-group"><h3>帮助</h3><a href="activate.html">激活指南</a><a href="faq.html">常见问题</a></section><section class="footer-group"><h3>合规</h3><a href="faq.html">已知限制</a></section></div><div class="footer-copyright"><span>© 2026 T-Box Technology · Windows 桌面工具</span></div></div></footer></body></html>
+
