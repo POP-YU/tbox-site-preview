@@ -1,4 +1,4 @@
-// T-Box 站点配置 —— 0.1.35 真实发布数据（2026-10-25 由 DSH 回填）。
+// T-Box 站点配置 —— 0.1.37 真实发布数据（2026-10-25 由 DSH 回填）。
 // 字节数与 SHA256 来自本机打包产物实测，并已与 GitHub Release 上传后回传的
 // digest 逐字节核对一致（sha256:39cff2df…3a46dd5 / TBox-Setup 由 Get-FileHash 复核）。
 // 下载直链指向 POP-YU/tbox-site-preview 的 Release 资产：GitHub 仓库单文件上限 100 MB，
@@ -9,15 +9,16 @@ window.TBOX_CONFIG = {
   BUY_URL_TRIAL: "",
   BUY_URL_MONTH: "",
   BUY_URL_SEASON: "",
-  MIRROR_1: "https://github.com/POP-YU/tbox-site-preview/releases/tag/v0.1.35",
+  MIRROR_1: "https://github.com/tianou10086-create/tbox-site/releases/tag/v0.1.37",
   // 便携包直链（与 PORTABLE_URL 同源，保留该键以兼容旧断言）。
-  MIRROR_2: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.35/TBox-0.1.35-portable.zip",
-  VERSION: "0.1.35",
-  SIZE: "106,842,674 bytes（101.9 MB）",
-  SHA256: "3F6349596AAA0EF27E0CB2A8A20B46D7C9ADB72C6AA7F182E0ACEB6918FB4492",
-  RELEASE_DATE: "2026-10-24",
-  PRIMARY_DOWNLOAD: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.35/TBox-Setup-0.1.35.exe",
-  PORTABLE_URL: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.35/TBox-0.1.35-portable.zip",
-  PORTABLE_SIZE: "154,140,157 bytes（147.0 MB）",
-  PORTABLE_SHA256: "39CFF2DFDF6E41C77C828E0BF4E33FE9B7E9B328372E19AEA3B92871F3A46DD5"
+  MIRROR_2: "https://github.com/tianou10086-create/tbox-site/releases/download/v0.1.37/TBox-0.1.37-portable.zip",
+  VERSION: "0.1.37",
+  SIZE: "108,771,736 bytes（103.7 MB）",
+  SHA256: "E97A6863403CFF0579AA5830A7DA683484F127B2E5D52DE841933DF6361430ED",
+  RELEASE_DATE: "2026-10-27",
+  PRIMARY_DOWNLOAD: "https://github.com/tianou10086-create/tbox-site/releases/download/v0.1.37/TBox-Setup-0.1.37.exe",
+  PORTABLE_URL: "https://github.com/tianou10086-create/tbox-site/releases/download/v0.1.37/TBox-0.1.37-portable.zip",
+  PORTABLE_SIZE: "158,658,138 bytes（151.3 MB）",
+  PORTABLE_SHA256: "962DA8FBEC843B897B68E3E3D050C73CD27C847690E590DFC86C9D8EDD298D0E"
 };
+
